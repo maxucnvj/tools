@@ -1,0 +1,9 @@
+简单的文件上传系统
+uploadfile.php  服务端
+Uploadfilesystem.class.php 客户端类
+
+使用方法如下
+ini_set('date.timezone','Asia/Shanghai');
+require_once 'Uploadfilesystem.class.php';
+$upload = new \Uploadfilesystem\Uploadfilesystem();
+var_dump($upload->upload(realpath('ring-alt.gif')));
